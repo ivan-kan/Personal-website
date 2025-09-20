@@ -29,8 +29,22 @@ h1 {
 }
 
 nav {
+    position: relative;
     display: flex;
     flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    width: 1050px;
+    margin: 0;
+}
+
+
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
     gap: 10px;
     padding: 10px;
@@ -47,7 +61,11 @@ nav {
 
 .nav-links a:hover,
 .nav-links a:focus {
-    background-color: #ff9776;
+    background-color: #f8d8cf;
+}
+
+.social:hover {
+    background-color: #f8d8cf;
 }
 
 @media screen and (min-width: 636px) {
