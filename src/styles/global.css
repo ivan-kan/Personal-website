@@ -44,10 +44,10 @@ nav {
 footer {
     display: flex;
     flex-direction: row;
-    justify-content: center;
     align-items: center;
     gap: 10px;
     padding: 10px;
+    padding-left: 0;
     width: 800px;
     margin: 0;
 }
