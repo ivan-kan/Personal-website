@@ -1,7 +1,8 @@
 ---
 import Header from "../components/Header.astro";
-import Background from "../components/Background.astro";
-import "../styles/global.css"
+import background from "../assets/background.svg";
+import Footer from "../components/Footer.astro";
+import "../styles/global.css";
 
 const { pageTitle } = Astro.props;
 ---
@@ -17,9 +18,10 @@ const { pageTitle } = Astro.props;
 	<body>
 		<Header />
 		<h1>{pageTitle}</h1>
+
 		<slot />
-		<Background />
+
+		<Footer />
+		<img id="background" src={background.src} alt="" fetchpriority="high" />
 	</body>
 </html>
-
-

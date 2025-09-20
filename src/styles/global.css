@@ -1,6 +1,6 @@
 html {
     background-color: #f1f5f9;
-    font-family: sans-serif;
+    font-family: Arial;
 }
 
 body {
@@ -57,4 +57,14 @@ h1 {
         display: inline-block;
         padding: 15px 20px;
     }
+}
+
+#background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    filter: blur(100px);
 }
