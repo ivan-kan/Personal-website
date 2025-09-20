@@ -1,18 +1,11 @@
 ---
-import { Image } from "astro:assets";
-import github from "../assets/github.svg";
-import linkedin from "../assets/linkedin.svg";
+import Social from "./Social.astro"
 ---
 
 <footer>
     <p>
         Learn more about me or my projects on
-        <a href="https://www.github.com/ivan-kan" target="_blank">
-            <Image src={github} alt="GitHub" />
-        </a>
-        <a href="https://www.linkedin.com/in/ivan-kan123" target="_blank">
-            <Image src={linkedin} alt="linkedin" />
-        </a>
+        <Social />
     </p>
 
     <style>

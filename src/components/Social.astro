@@ -1,0 +1,23 @@
+---
+import { Image } from "astro:assets";
+import github from "../assets/github.svg";
+import linkedin from "../assets/linkedin.svg";
+import ig from "../assets/instagram.svg";
+---
+
+<a href="https://www.github.com/ivan-kan/" target="_blank">
+    <Image src={github} alt="GitHub" />
+</a>
+<a href="https://www.linkedin.com/in/ivan-kan123/" target="_blank">
+    <Image src={linkedin} alt="linkedin" />
+</a>
+<a href="https://www.instagram.com/ivan_kan__/" target="_blank">
+    <Image src={ig} alt="My Instagram account" />
+</a>
+
+<style>
+    a {
+        margin-left: 10px;
+        text-decoration: none;
+    }
+</style>
