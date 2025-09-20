@@ -1,6 +1,19 @@
+---
+/* Main menu items */
+const textLinks: { label: string; href: string }[] = [
+    { label: "Home", href: "/" },
+    { label: "About", href: "/about/" },
+    { label: "Education", href: "/education/" },
+    { label: "Projects", href: "/projects/" },
+];
+---
+
 <div class="nav-links">
-    <a href="/">Home</a>
-    <a href="/about/">About</a>
-    <a href="/education/">Education</a>
-    <a href="/projects/">Projects</a>
+    {
+        textLinks.map(({ label, href }) => (
+            <a class="link" href={href}>{label}</a>
+        )) 
+    } 
 </div>
+
+

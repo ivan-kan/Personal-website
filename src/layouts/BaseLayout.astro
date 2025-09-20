@@ -1,0 +1,25 @@
+---
+import Header from "../components/Header.astro";
+import Background from "../components/Background.astro";
+import "../styles/global.css"
+
+const { pageTitle } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<title>{pageTitle}</title>
+	</head>
+	<body>
+		<Header />
+		<h1>{pageTitle}</h1>
+		<slot />
+		<Background />
+	</body>
+</html>
+
+
