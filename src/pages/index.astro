@@ -1,17 +1,22 @@
 ---
+import { Image } from "astro:assets";
 import BaseLayout from "../layouts/BaseLayout.astro";
+import profilePic from "../assets/profilePic.jpg";
 
 const pageTitle = "Home Page";
 ---
 
 <BaseLayout pageTitle={pageTitle}>
-	<h1 id="hello">Hello! &#128075</h1>
-	<h1>Welcome to My Website</h1>
-	<h2>I'm Ivan <br /> A Computer Engineering &#128187 Student</h2>
-</BaseLayout>
+	<div>
+		<h1 id="hello">Hello! &#128075</h1>
+		<h1>Welcome to My Website</h1>
+		<h2>I'm Ivan <br /> A Computer Engineering &#128187 Student</h2>
+	</div>
+	<Image src={profilePic} alt="My profile picture" />
 
-<style>
-	#hello {
-		font-size: 50px;
-	}
-</style>
+	<style>
+		#hello {
+			font-size: 50px;
+		}
+	</style>
+</BaseLayout>
