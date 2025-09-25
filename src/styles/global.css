@@ -57,12 +57,16 @@ footer {
     text-transform: uppercase;
 }
 
-.nav-links a:hover,
-.nav-links a:focus {
+.social:hover {
     background-color: #f8d8cf;
 }
 
-.social:hover {
+.socialFooter:hover {
+    background-color: #f7bfb0;
+}
+
+.nav-links a:hover,
+.nav-links a:focus {
     background-color: #f8d8cf;
 }
 
