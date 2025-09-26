@@ -7,16 +7,34 @@ const pageTitle = "Home Page";
 ---
 
 <BaseLayout pageTitle={pageTitle}>
-	<div>
+	<div id="content-container">
 		<h1 id="hello">Hello! &#128075</h1>
 		<h1>Welcome to My Website</h1>
 		<h2>I'm Ivan <br /> A Computer Engineering &#128187 Student</h2>
+		<div id="image-container">
+			<Image src={profilePic} alt="My profile picture" id="profile" />
+		</div>
 	</div>
-	<Image src={profilePic} alt="My profile picture" />
 
 	<style>
 		#hello {
 			font-size: 50px;
+		}
+
+		#content-container {
+			position: relative;
+			width: 1000px;
+			height: 300px;
+		}
+
+		#profile {
+			right: 130px;
+			top: 10px;
+			position: absolute;
+			border-radius: 50%;
+			width: 40%;
+			height: 133%;
+			opacity: 0.9;
 		}
 	</style>
 </BaseLayout>
