@@ -14,7 +14,7 @@ body {
     box-sizing: border-box;
 }
 
-a:visited {
+a, a:visited {
     color: rgb(116, 2, 116);     /* text color unchanged after visisting the page */
 }
 
