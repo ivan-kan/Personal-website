@@ -14,6 +14,10 @@ body {
     box-sizing: border-box;
 }
 
+a:visited {
+    color: rgb(116, 2, 116);     /* text color unchanged after visisting the page */
+}
+
 h1 {
     margin: 1rem 0;
     font-size: 2.5rem;
