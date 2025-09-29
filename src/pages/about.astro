@@ -5,5 +5,33 @@ const pageTitle = "About Me";
 ---
 
 <BaseLayout pageTitle={pageTitle}>
-    <h1>hola!</h1>
+    <h1 id="top">About Me</h1>
+
+    <h2 class="sub-heading">Who am I?</h2>
+    <h3 style="margin-top: 0;">
+        I'm Ivan <br /> A Computer Engineering student at
+        <a href="https://hkust.edu.hk/zh-hant" target="_blank">
+            The Hong Kong University of Science and Technology (HKUST)
+        </a>
+    </h3>
+
+    <h2 class="sub-heading">Skills</h2>
+
+    <h2 class="sub-heading">Interests</h2>
 </BaseLayout>
+
+<style>
+    #top {
+        text-align: center;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .sub-heading {
+        text-decoration: underline;
+        margin-bottom: 15px;
+    }
+</style>
