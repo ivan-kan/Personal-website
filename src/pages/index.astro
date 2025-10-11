@@ -15,26 +15,66 @@ const pageTitle = "Home Page";
 			<Image src={profilePic} alt="My profile picture" id="profile" />
 		</div>
 	</div>
+</BaseLayout>
 
-	<style>
+<style>
+	#hello {
+		font-size: 3rem;
+	}
+
+	#content-container {
+		position: relative;
+		max-width: 1000px;
+		width: 100%;
+		height: auto;
+		min-height: 20vh;
+		aspect-ratio: 10 / 3;
+		margin: 3rem auto;
+	}
+
+	#profile {
+		position: absolute;
+		right: -14vw; /* Changed to viewport units for responsiveness */
+		top: 1vh; /* Changed to viewport units */
+		border-radius: 50%;
+		width: 60%; /* Reduced slightly for better fit on smaller screens */
+		max-width: 400px; /* Added max-width to prevent oversized images */
+		height: auto; /* Auto height to maintain aspect ratio */
+		aspect-ratio: 1 / 1; /* Ensures circular shape */
+		opacity: 0.9;
+	}
+
+	/* Media query for smaller screens */
+	@media screen and (max-width: 768px) {
 		#hello {
-			font-size: 50px;
+			font-size: 2rem; /* Smaller font size for tablets/mobile */
 		}
 
 		#content-container {
-			position: relative;
-			width: 1000px;
-			height: 300px;
+			min-height: 15vh; /* Adjusted for smaller screens */
 		}
 
 		#profile {
-			right: 130px;
-			top: 10px;
-			position: absolute;
-			border-radius: 50%;
-			width: 40%;
-			height: 133%;
-			opacity: 0.9;
+			width: 50%; /* Larger relative width for visibility */
+			right: -17vw; /* Adjusted positioning */
+			top: 0.5vh;
 		}
-	</style>
-</BaseLayout>
+	}
+
+	/* Media query for very small screens */
+	@media screen and (max-width: 480px) {
+		#hello {
+			font-size: 1.5rem; /* Further reduced font size */
+		}
+
+		#content-container {
+			min-height: 10vh;
+		}
+
+		#profile {
+			width: 60%; /* Even larger relative width for small screens */
+			max-width: 200px; /* Smaller max-width for tiny screens */
+			right: 1vw;
+		}
+	}
+</style>
