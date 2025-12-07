@@ -4,7 +4,15 @@ import { Image } from "astro:assets";
 import python from "../assets/programming_icon/python.png";
 import cplusplus from "../assets/programming_icon/c++.png";
 import c from "../assets/programming_icon/c.png";
+import js from "../assets/programming_icon/js.png";
+import html from "../assets/programming_icon/html.png";
+import css from "../assets/programming_icon/css.png";
 import astro from "../assets/programming_icon/astro.svg";
+import git from "../assets/programming_icon/git.png";
+import github from "../assets/programming_icon/github.png";
+import word from "../assets/programming_icon/word.png";
+import ppt from "../assets/programming_icon/ppt.png";
+import excel from "../assets/programming_icon/excel.png";
 
 const pageTitle = "About Me";
 ---
@@ -45,8 +53,8 @@ const pageTitle = "About Me";
                 Some of my favourite artists:
                 <a href="https://www.youtube.com/watch?v=5yYNK4Gncww"target="_blank">Eason</a>,
                 <a href="https://www.youtube.com/watch?v=JZYNGEudQx0"target="_blank">Terence Lam</a>,
-                <a href="https://www.youtube.com/watch?v=ysgqDm4B5Rc"target="_blank">MC Cheung</a>,
-                <a href='https://www.youtube.com/watch?v=YjgeLmX-6HE"'target="_blank">Jay Fung</a>
+                <a href="https://www.youtube.com/watch?v=2J_0nahRxBk" target="_blank">On Chan</a>,
+                <a href="https://www.youtube.com/watch?v=ysgqDm4B5Rc"target="_blank">MC Cheung</a>
             </p>
             <p style="font-size: 1rem; margin-top: 0;">
                 (You can click on each artist's name to discover my favorite
@@ -58,6 +66,7 @@ const pageTitle = "About Me";
         </li>
         <li>
             Big <b>Anime</b> fan!! <br />
+            <!-- 
             <p style="font-size: 1rem; margin-top: 0;">
                 If you don't know what to watch next or haven't seen these yet,
                 just follow this list.&#x1F609 <br />
@@ -68,7 +77,7 @@ const pageTitle = "About Me";
             <li>進擊的巨人 Attack on Titan</li>
             <li>Hunter×Hunter</li>
             <li>無職轉生 Mushoku Tensei: Jobless Reincarnation</li>
-        </ol>
+        </ol> -->
         <li>
             Huge <b>Movie</b> lover &#x1F3A5 &#x1F37F
         </li>
@@ -77,7 +86,7 @@ const pageTitle = "About Me";
     <h2 class="sub-heading">Skills</h2>
     <ul class="list">
         <li>
-            Programming Languages: 
+            <b>Programming Languages:</b> 
             <div style="display: inline-block;">
                 Python <Image src={python} alt="Python" class="icon"/>
             </div>
@@ -90,19 +99,46 @@ const pageTitle = "About Me";
         </li>
 
         <li>
-            Web Development: 
+            <b>Web Development: </b>
+            <div style="display: inline-block;">
+                JavaScript <Image src={js} alt="JavaScript" class="icon"/>
+            </div>
+            <div style="display: inline-block;">
+                HTML <Image src={html} alt="HTML" class="icon"/>
+            </div>
+            <div style="display: inline-block;">
+                CSS <Image src={css} alt="CSS" class="icon"/>
+            </div>
+            <div style="display: inline-block;">
+                Astro <Image src={astro} alt="Astro" class="icon"/>
+            </div>
         </li>
 
         <li>
-            Development Tools: 
+            <b>Development Tools: </b>
+            <div style="display: inline-block;">
+                Git <Image src={git} alt="Git" class="icon"/>
+            </div>
+            <div style="display: inline-block;">
+                GitHub <Image src={github} alt="GitHub" class="icon"/>
+            </div>
         </li>
 
         <li>
-            Languages: 
+            <b>Languages:</b> Native in Cantonese, and proficient in English and Mandarin
         </li>
 
         <li>
-            Tools: 
+            <b>Tools: </b> Mircrosoft
+            <div style="display: inline-block;">
+                Word <Image src={word} alt="Word" class="icon"/>
+            </div>
+            <div style="display: inline-block;">
+                PowerPoint <Image src={ppt} alt="PowerPoint" class="icon"/>
+            </div>
+            <div style="display: inline-block;">
+                Excel <Image src={excel} alt="Excel" class="icon"/>
+            </div>
         </li>
     </ul>
 </BaseLayout>
@@ -130,8 +166,8 @@ const pageTitle = "About Me";
     }
 
     .icon {
-        width: 2rem;
-        height: 2rem;
+        width: 1.8rem;
+        height: 1.8rem;
         vertical-align: middle;
     }
 </style>
